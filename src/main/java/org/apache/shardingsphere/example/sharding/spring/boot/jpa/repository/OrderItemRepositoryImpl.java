@@ -56,7 +56,7 @@ public class OrderItemRepositoryImpl implements OrderItemRepository {
     
     @Override
     public void delete(final Long orderItemId) {
-        Query query = entityManager.createQuery("DELETE FROM OrderItemEntity i WHERE i.orderItemId = ?1 AND i.userId = 51");
+        Query query = entityManager.createQuery("DELETE FROM OrderItemEntity i WHERE i.orderId = ?1");
         query.setParameter(1, orderItemId);
         query.executeUpdate();
     }

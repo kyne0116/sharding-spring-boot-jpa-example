@@ -57,7 +57,6 @@ public class OrderServiceImpl implements ExampleService {
         List<Long> orderIds = insertData();
         printData();
         deleteData(orderIds);
-        printData();
         System.out.println("-------------- Process Success Finish --------------");
     }
 
